@@ -31,16 +31,16 @@ class PaisRepository extends IRepository {
 
     async obtenerRecetasPorRegion(region){
         console.log("En repository - obtenerRecetasPorRegion");
-        console.log(region);
-        return await Receta.find({clase: "RECETA", regiones: region}); 
-        //let recetasRecuperadas;
-        /* await Receta.find({clase: "RECETA", regiones: region})
+        //console.log(region);
+        //return await Receta.find({clase: "RECETA", regiones: region}); 
+        let recetasRecuperadas;
+         await Receta.find({clase: "RECETA", regiones: region})
         .limit(3).then(result => {
             console.log(result);
             recetasRecuperadas = result;
 
         }).catch(err => console.error(err));
-        return recetasRecuperadas; */
+        return recetasRecuperadas;
     }
 
     async registrarRecetasAPI(listaDeRecetas){
