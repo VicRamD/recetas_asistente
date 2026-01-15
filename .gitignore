@@ -1,0 +1,5 @@
+node_modules/
+src/config/constring.txt
+src/services/apiSpoontacular.txt
+.env
+.vscode
