@@ -64,6 +64,11 @@ app.get('/acerca', renderizarAbout);
 app.use('/api', paisesRoutes);
 
 //Iniciar el servidor
-app.listen(PORT, ()=> {
+/*app.listen(PORT, ()=> {
     console.log(`Servidor escuchando en el puerto ${PORT}`);
+})*/
+/*para levantar el servido en render es necesario configurar el puerto http al
+ que render va a escuchar, en este caso 0.0.0.0*/
+app.listen(PORT, '0.0.0.0', ()=> {
+    console.log(`Servidor levantando en el puerto ${PORT} desde el servidor`);
 })
