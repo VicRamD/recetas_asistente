@@ -35,7 +35,7 @@ class PaisRepository extends IRepository {
         //return await Receta.find({clase: "RECETA", regiones: region}); 
         let recetasRecuperadas;
          await Receta.find({clase: "RECETA", regiones: region})
-        .limit(3).then(result => {
+        .limit(1).then(result => {
             console.log(result);
             recetasRecuperadas = result;
 
