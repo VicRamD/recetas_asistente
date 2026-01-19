@@ -38,7 +38,7 @@ export const renderizarReceta = (receta) =>{
 
     return {
         nombre: receta.nombre,
-        imagen: receta.image,
+        imagen: receta.imagen,
         regiones: receta.regiones,
         resumen: receta.resumen,
         tiposPlato: receta.tiposPlato,
